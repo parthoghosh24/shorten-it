@@ -1,4 +1,4 @@
-# Shorten.it (A simple URL shortner)
+# Shorten.it (A simple URL shortner - https://secure-scrubland-91872.herokuapp.com/)
 
 The app simply does what the title suggests. Its a service stimilar to goo.gl or bit.ly 
 via which you can shorten urls and get analytics about it
@@ -10,6 +10,8 @@ via which you can shorten urls and get analytics about it
 * Mongodb 3.4
 
 * Puma as the app server
+
+* Deployed on heroku for demo purpose
 
 ## Basic features:
 

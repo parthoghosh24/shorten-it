@@ -6,11 +6,9 @@ development:
         - localhost:27017
       
 production:
-  clients:
+  sessions:
     default:
-      database: shorten_it_prod
-      hosts:
-        - localhost:27017
+      uri: <%= ENV['MONGODB_URI'] %>
 
 test:
   clients:
