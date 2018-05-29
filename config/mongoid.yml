@@ -1,0 +1,24 @@
+development:
+  clients:
+    default:
+      database: shorten_it_devel
+      hosts:
+        - localhost:27017
+      
+production:
+  clients:
+    default:
+      database: shorten_it_prod
+      hosts:
+        - localhost:27017
+
+test:
+  clients:
+    default:
+      database: shorten_it_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
