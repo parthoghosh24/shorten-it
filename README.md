@@ -1,4 +1,4 @@
-# Shorten.it (A simple URL shortner - https://secure-scrubland-91872.herokuapp.com/)
+# Shorten.it (A simple URL shortner - https://safe-reef-97365.herokuapp.com)
 
 The app simply does what the title suggests. Its a service stimilar to goo.gl or bit.ly 
 via which you can shorten urls and get analytics about it
