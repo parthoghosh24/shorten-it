@@ -24,11 +24,13 @@ $(document).ready(function() {
   		{
   			$('#shorten-generate').prop('disabled', true);
   			$('#shorten-generate').html('<i class="fa fa-circle-o-notch fa-spin"></i> Generating')
-  			$.post( "/urls", {link: link}, function( data ) {
+  			$.post( "/urls", {link: link}, function( urlData ) {
 			  $('#shorten-generate').prop('disabled', false);
   			  $('#shorten-generate').html('Generate');
-  			  $('#shorten-url').html('<b>abc</b>');
+  			  $('#shorten-url').html("<b>"+urlData.short_url+"</b>");
+  			  $('#shorten-url').attr('href', urlData.short_url);
   			  $('#shorten-url-stats').html('<b><i class="fa fa-bar-chart"></i> stats</b>');
+  			  $('#shorten-url-stats').attr('href', urlData.short_url+"/stats");
 			});
   		}
 

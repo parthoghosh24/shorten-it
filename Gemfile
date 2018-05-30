@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'useragent'
 # Use Geocoder for getting location
 gem 'geocoder'
+# Use hashids to encrypt
+gem 'hashids'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

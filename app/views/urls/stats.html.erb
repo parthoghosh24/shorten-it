@@ -1,2 +1,33 @@
-<h1>Urls#stats</h1>
-<p>Find me in app/views/urls/stats.html.erb</p>
+<div class="row">
+	<div class="shorten-form-centering">
+		<div class="row pb-10">
+			<h2><%=@url.short_url%> stats</h2>	
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h1 class="text-primary">Hits</h1>
+				<h1 class="text-primary"><%=@url.logs.size%></h1>
+			</div>
+			<div class="col-md-6">
+				<h3 class="text-primary">Referrer (<%=@url.referers.size%>)</h3>
+				<p class="text-primary"><%=@url.referers.join(",")%></p>	
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-4">
+				<h3 class="text-primary">Countries (<%=@url.locations.size%>)</h3>
+				<p class="text-primary"><%=@url.locations.join(",")%></p>	
+			</div>
+			<div class="col-md-4">
+				<h3 class="text-primary">Platform (<%=@url.platforms.size%>)</h3>
+				<p class="text-primary"><%=@url.platforms.join(",")%></p>	
+			</div>
+			<div class="col-md-4">
+				<h3 class="text-primary">Browser (<%=@url.browsers.size%>)</h3>
+				<p class="text-primary"><%=@url.browsers.join(",")%></P>
+			</div>
+		</div>
+	</div>
+</div>
+
