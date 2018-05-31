@@ -34,6 +34,8 @@ gem 'geocoder'
 gem 'hashids'
 # Use grape for API
 gem 'grape'
+# Use grape knock for Authentication
+gem 'grape-knock'
 # Use rack-cors for API to interact outside application
 gem 'rack-cors'
 # Use Redis adapter to run Action Cable in production
@@ -54,6 +56,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 4.8'
   gem 'cucumber-rails', '~> 1.5', :require => false
   gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
+  gem 'shoulda'
 end
 
 group :development do
