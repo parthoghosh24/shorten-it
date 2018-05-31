@@ -21,7 +21,7 @@ via which you can shorten urls and get analytics about it
 
 * Also comes with REST API for the stats.
 
-* API doc can be accessed from https://safe-reef-97365.herokuapp.com/apidoc. Just fill the input with https://safe-reef-97365.herokuapp.com/api/v1/api/doc and click explore
+* API doc can be accessed from https://safe-reef-97365.herokuapp.com/apidoc. Just fill the input with https://safe-reef-97365.herokuapp.com/api/v1/doc/api and click explore
 
 
 
