@@ -25,12 +25,16 @@ via which you can shorten urls and get analytics about it
 
 
 
-## Possible Enhancements:
+## Possible Enhancements (Can be done with more time in hand):
 
-* Full blown authentication system for the API as well as the whole app.
+* Full blown authentication system for the API as well as the whole app. Currently the application lacks authentication.
 
 * Better UI and visualization for the statistics.
 
 * More robust analytics for the link.
 
 * Personalized Dashboard for users with all the link they have shortened till now and data around it.
+
+* More robust feature testing of the product.
+
+* More robust unit testing of the product.
