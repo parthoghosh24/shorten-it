@@ -34,6 +34,8 @@ gem 'geocoder'
 gem 'hashids'
 # Use grape for API
 gem 'grape'
+# Use rack-cors for API to interact outside application
+gem 'rack-cors'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
