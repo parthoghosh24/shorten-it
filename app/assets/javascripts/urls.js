@@ -6,10 +6,25 @@ $(document).ready(function() {
 
   $('#shorten-link').on('input', function(event) {
   	 var link = $('#shorten-link').val();
+  	 $('#shorten-link').removeClass('is-invalid');	
+  	 $("#shorten-input-err").text('');	
+  	 $('#shorten-generate').prop('disabled', true);
   	 if(link.length > 0)
   	 {
-  	 	$('#shorten-link').removeClass('is-invalid');	
-  		$("#shorten-input-err").text('');	
+  	 	var linkMatched = link.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+  	 	if( linkMatched != null)
+  	 	{
+  	 		$('#shorten-link').removeClass('is-invalid');	
+  			$("#shorten-input-err").text('');	
+  			$('#shorten-generate').prop('disabled', false);
+  	 	}
+  	 	else
+  	 	{
+  	 		$('#shorten-link').addClass('is-invalid');	
+  			$("#shorten-input-err").text('Does not look like a valid link');
+  			$('#shorten-generate').prop('disabled', true);
+  	 	}
+  	 		
   	 }
   });	
 
