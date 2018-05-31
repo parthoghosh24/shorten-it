@@ -147,6 +147,10 @@ GEM
     grape-knock (0.2.0)
       grape (>= 0.10)
       knock
+    grape-swagger (0.29.0)
+      grape (>= 0.16.2)
+    grape-swagger-rails (0.3.0)
+      railties (>= 3.2.12)
     hashids (1.0.4)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
@@ -335,6 +339,8 @@ DEPENDENCIES
   geocoder
   grape
   grape-knock
+  grape-swagger
+  grape-swagger-rails
   hashids
   jbuilder (~> 2.5)
   jquery-rails

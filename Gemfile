@@ -34,6 +34,10 @@ gem 'geocoder'
 gem 'hashids'
 # Use grape for API
 gem 'grape'
+# Use grape-swagger for API doc
+gem 'grape-swagger'
+# Use grape-swagger-rails for API doc
+gem 'grape-swagger-rails'
 # Use grape knock for Authentication
 gem 'grape-knock'
 # Use rack-cors for API to interact outside application
