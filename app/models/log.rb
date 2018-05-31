@@ -1,5 +1,6 @@
 class Log
   include Mongoid::Document
+  include Mongoid::Timestamps
   field :ip, type: String
   field :location, type: String
   field :referrer, type: String

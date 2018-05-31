@@ -1,6 +1,7 @@
 class Url
   include Mongoid::Document
   include Encryptable
+  include Mongoid::Timestamps
   field :link, type: String
   field :short_url, type: String
   field :short_url_text, type: String
@@ -21,9 +22,9 @@ class Url
   	self.logs.pluck(:platform).uniq
   end
 
-  def locations
-  	self.logs.pluck(:location).uniq
-  end
+ def locations
+ 	self.logs.pluck(:location).uniq
+ end
 
   def referers
   	self.logs.pluck(:referrer).uniq
